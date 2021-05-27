@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # JavaScript_template-
 JavaScript_template- Start_Up 
 =======
+=======
+>>>>>>> a5742ea4e838fa1b14cacca559a866a7a8632dc1
 JavaScript
 If you are not familiar with linters and GitHub Actions, read root level README.
 
@@ -62,5 +65,9 @@ IMPORTANT NOTE: feel free to research auto-correct options for Stylelint if you 
 Test/Deployment Actions
 Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
 
+<<<<<<< HEAD
 Make sure that you do not modify the .github/workflows/linters.yml but that you create a separe GitHub Action workflow file for that.
 >>>>>>> d42792fb36d896d5b5c91a082d067168c79dce9b
+=======
+Make sure that you do not modify the .github/workflows/linters.yml but that you create a separe GitHub Action workflow file for that.
+>>>>>>> a5742ea4e838fa1b14cacca559a866a7a8632dc1
