@@ -27,6 +27,30 @@ header.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 contentSelector.append(header);
 
 const main = document.createElement('main');
+main.classList.add("px-5", "py-4", "justify-content-center")
+main.innerHTML=`
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+<div class="card-header">Header</div>
+<div class="card-body">
+  <h5 class="card-title">Dark card title</h5>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+</div>
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+<div class="card-header">Header</div>
+<div class="card-body">
+  <h5 class="card-title">Dark card title</h5>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+</div>
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+<div class="card-header">Header</div>
+<div class="card-body">
+  <h5 class="card-title">Dark card title</h5>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+</div>
+`
 contentSelector.append(main);
 
 const footer = document.createElement('footer');
