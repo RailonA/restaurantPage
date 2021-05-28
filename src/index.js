@@ -62,10 +62,10 @@ footer.innerHTML=`
 </div>`;
 
 contentSelector.append(footer);
-
+const mainSelector = document.querySelector('main');
 const menuLink = document.querySelector('#menu-link');
 menuLink.addEventListener("click", e => {
-  contentSelector.innerHTML = `
+  mainSelector.innerHTML = `
   <div class="card-group">
   <div class="card">
     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
