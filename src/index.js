@@ -27,27 +27,27 @@ header.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 contentSelector.append(header);
 
 const main = document.createElement('main');
-main.classList.add("px-5", "py-4", "justify-content-center")
+main.classList.add("px-5", "py-4")
 main.innerHTML=`
-<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-<div class="card-header">Header</div>
+<h1 class="text-center"> Restaurant Page </h1>
+<div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
 <div class="card-body">
-  <h5 class="card-title">Dark card title</h5>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <h5 class="card-title">Delicious FastFood</h5>
+  <p class="card-text">Prepare yourself to taste the heaven in a dish.</p>
 </div>
 </div>
-<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-<div class="card-header">Header</div>
+<div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
+<div class="card-header">Hours</div>
 <div class="card-body">
-  <h5 class="card-title">Dark card title</h5>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <h5 class="card-title">24/7</h5>
+  <p class="card-text"> From Thursday to Sunday only.</p>
 </div>
 </div>
-<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-<div class="card-header">Header</div>
+<div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
+<div class="card-header">Location</div>
 <div class="card-body">
-  <h5 class="card-title">Dark card title</h5>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <h5 class="card-title">Barranquilla, Colombia</h5>
+  <p class="card-text">742 Evergreen Terrace.</p>
 </div>
 </div>
 `
