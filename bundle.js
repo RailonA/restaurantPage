@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 /***/ (() => {
 
-eval("\n//   <div id=\"content\">\n//   </div>\n\n// class RestaurentPage {\n\n// }\nconst pageContent = document.getElementById(\"content\");\n\npageContent.textContent = \"board\";\n\n\n\nconsole.log(\"Hello World!\");\n\n//# sourceURL=webpack://restaurentpage/./src/main.js?");
+eval("// <body>\r\n//   <div id=\"content\">\r\n//   </div>\r\n// </body>\r\nconst header = document.createElement('header');\r\nconst contentSelector = document.querySelector('#content');\r\nheader.innerHTML = `<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n<div class=\"container-fluid\">\r\n\r\n  <div class=\"collapse navbar-collapse justify-content-md-center\">\r\n    <ul class=\"navbar-nav\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link active\" aria-current=\"page\" href=\"#\" id=\"home-link\">Home</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#\" id=\"menu-link\">Menu</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#\" id=\"contact-link\">Contact Us</a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n\r\n</div>\r\n</nav>`;\r\n\r\ncontentSelector.append(header);\r\n\r\nconst main = document.createElement('main');\r\ncontentSelector.append(main);\r\n\r\nconst footer = document.createElement('footer');\r\n\r\nfooter.classList.add('py-4','bg-dark','flex-shrink-0');\r\nfooter.innerHTML=`\r\n<div class=\"container text-center\">\r\n  <a href='https://www.freepik.com/photos/background' class='text-muted'>This is the footer</a>\r\n</div>`;\r\n\r\ncontentSelector.append(footer);\n\n//# sourceURL=webpack://restaurentpage/./src/index.js?");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("\n//   <div id=\"content\">\n//   </div>\n\n// class RestaurentPage {\n\n/
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/main.js"]();
+/******/ 	__webpack_modules__["./src/index.js"]();
 /******/ 	
 /******/ })()
 ;
