@@ -1,7 +1,17 @@
+/* eslint-disable no-undef */
 // <body>
 //   <div id="content">
 //   </div>
 // </body>
+
+ import {
+   DisplayHome
+  } from './home.js';
+  import {
+    DisplayMenu
+   } from './menu.js';
+ 
+
 const header = document.createElement('header');
 const contentSelector = document.querySelector('#content');
 header.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -25,33 +35,18 @@ header.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 </nav>`;
 
 contentSelector.append(header);
-
+// Display Home Page  displayHome();
 const main = document.createElement('main');
-main.classList.add("px-5", "py-4")
-main.innerHTML=`
-<h1 class="text-center"> Restaurant Page </h1>
-<div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-<div class="card-body">
-  <h5 class="card-title">Delicious FastFood</h5>
-  <p class="card-text">Prepare yourself to taste the heaven in a dish.</p>
-</div>
-</div>
-<div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-<div class="card-header">Hours</div>
-<div class="card-body">
-  <h5 class="card-title">24/7</h5>
-  <p class="card-text"> From Thursday to Sunday only.</p>
-</div>
-</div>
-<div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-<div class="card-header">Location</div>
-<div class="card-body">
-  <h5 class="card-title">Barranquilla, Colombia</h5>
-  <p class="card-text">742 Evergreen Terrace.</p>
-</div>
-</div>
-`
 contentSelector.append(main);
+const homeLink = document.querySelector("#home-link");
+homeLink.addEventListener("click", DisplayHome.displayHome())
+
+// Display Menu Page  displayMenu();
+const MenuLink = document.querySelector("#menu-link");
+MenuLink.addEventListener("click", DisplayMenu.displayMenu())
+
+
+
 
 const footer = document.createElement('footer');
 
@@ -64,88 +59,7 @@ footer.innerHTML=`
 contentSelector.append(footer);
 
 const mainSelector = document.querySelector('main');
-const menuLink = document.querySelector('#menu-link');
-menuLink.addEventListener("click", e => {
-  mainSelector.innerHTML = `
-  <div class="card-group">
-  <div class="card">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  </div>
-  <div class="card-group">
-  <div class="card">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  </div>
-  <div class="card-group">
-  <div class="card">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  </div>`
-})
+
 
 const contactLink = document.querySelector('#contact-link');
 
@@ -233,27 +147,3 @@ contactLink.addEventListener("click", e => {
 </div>`
 })
 
-const homeLink = document.querySelector('#home-link');
-homeLink.addEventListener("click", e => {
-  mainSelector.innerHTML = `<h1 class="text-center"> Restaurant Page </h1>
-  <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Delicious FastFood</h5>
-    <p class="card-text">Prepare yourself to taste the heaven in a dish.</p>
-  </div>
-  </div>
-  <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-  <div class="card-header">Hours</div>
-  <div class="card-body">
-    <h5 class="card-title">24/7</h5>
-    <p class="card-text"> From Thursday to Sunday only.</p>
-  </div>
-  </div>
-  <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-  <div class="card-header">Location</div>
-  <div class="card-body">
-    <h5 class="card-title">Barranquilla, Colombia</h5>
-    <p class="card-text">742 Evergreen Terrace.</p>
-  </div>
-  </div>` 
-}) 
