@@ -51,9 +51,9 @@ DisplayHome.displayHome()
 
 // Display Menu Page  displayMenu();
 // MenuLink.addEventListener("click", DisplayMenu.displayMenu())
-homeLink.addEventListener("click", e => { DisplayHome.displayHome()})
-menuLink.addEventListener("click", e => { DisplayMenu.displayMenu()})
-contactLink.addEventListener("click", e => { DisplayContact.displayContact()})
+homeLink.addEventListener("click", () => { DisplayHome.displayHome()})
+menuLink.addEventListener("click", () => { DisplayMenu.displayMenu()})
+contactLink.addEventListener("click", () => { DisplayContact.displayContact()})
 
 
 
