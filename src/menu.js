@@ -8,7 +8,8 @@ export var DisplayMenu = (function () {
                             // const main = document.querySelector('main');
             
                             const main = document.querySelector('main');
-                            main.classList.add('d-flex', 'col-12');
+                            main.classList.add('col-12');
+                            main.classList.add('col-12');
 
                             const homeLink = document.querySelector("#home-link");
                             const menuLink = document.querySelector("#menu-link");
