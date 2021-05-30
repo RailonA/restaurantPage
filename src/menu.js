@@ -3,8 +3,13 @@
 export var DisplayMenu = (function () {
     return {
         displayMenu: function () {
-            const main = document.querySelector('main');
-
+                const main = document.querySelector('main');
+                const homeLink = document.querySelector("#home-link");
+                const menuLink = document.querySelector("#menu-link");
+                const contactLink = document.querySelector('#contact-link');
+                homeLink.classList.remove('active');
+                menuLink.classList.add('active');
+                contactLink.classList.remove('active');
                 main.innerHTML = `
                 <div class="card-group">
                 <div class="card">

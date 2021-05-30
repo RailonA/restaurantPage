@@ -3,7 +3,12 @@ export var DisplayContact = (function () {
     return {
         displayContact: function () {
             const main = document.querySelector('main');
-
+            const homeLink = document.querySelector("#home-link");
+            const menuLink = document.querySelector("#menu-link");
+            const contactLink = document.querySelector('#contact-link');
+            homeLink.classList.remove('active');
+            menuLink.classList.remove('active');
+            contactLink.classList.add('active');
                     main.innerHTML = `<div class="container">
 
                     <div class="row">

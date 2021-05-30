@@ -38,7 +38,7 @@ header.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 </nav>`;
 
 contentSelector.append(header);
-// Display Home Page  displayHome();
+
 const main = document.createElement('main');
 contentSelector.append(main);
 
@@ -48,14 +48,9 @@ const contactLink = document.querySelector('#contact-link');
 
 DisplayHome.displayHome()
 
-
-// Display Menu Page  displayMenu();
-// MenuLink.addEventListener("click", DisplayMenu.displayMenu())
 homeLink.addEventListener("click", () => { DisplayHome.displayHome()})
 menuLink.addEventListener("click", () => { DisplayMenu.displayMenu()})
 contactLink.addEventListener("click", () => { DisplayContact.displayContact()})
-
-
 
 const footer = document.createElement('footer');
 
