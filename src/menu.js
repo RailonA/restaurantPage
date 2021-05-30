@@ -7,8 +7,9 @@ export var DisplayMenu = (function () {
                     displayMenu: function () {
                             // const main = document.querySelector('main');
             
-                            const mainDiv = document.querySelector('main');
-            
+                            const main = document.querySelector('main');
+                            main.classList.add('d-flex', 'col-12');
+
                             const homeLink = document.querySelector("#home-link");
                             const menuLink = document.querySelector("#menu-link");
                             const contactLink = document.querySelector('#contact-link');
@@ -16,31 +17,56 @@ export var DisplayMenu = (function () {
                             menuLink.classList.add('active');
                             contactLink.classList.remove('active');
             
-                            mainDiv.innerHTML='';
-                            const menuCard = document.createElement('div');
-                            menuCard.classList.add('card', 'card-body', 'mb-3', 'col-4');
-            
-                            const image = document.createElement('img');
-                            image.src = 'https://external-preview.redd.it/JVszJQei9uyJeK_Hk2GmZi7DMZZDVobZIi-2YM3SORo.jpg?auto=webp&s=dc69b844a3d4ba4af9c0b154df4133d1b12a3a64';
-                            const cardTitle = document.createElement('h5');
-                            cardTitle.classList.add('card-title');
-                            cardTitle.textContent = `Card Title`;
-                            const cardText = document.createElement('h5');
-                            cardText.classList.add('card-text');
-                            cardText.textContent = `This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.`;
-                          
+                            main.innerHTML='';
+                            // Meny Card One
+                            const menuCardOne = document.createElement('div');
+                            menuCardOne.classList.add('card', 'card-body', 'mb-3', 'col-3');
+                            const imageOne = document.createElement('img');
+                            imageOne.src = 'https://external-preview.redd.it/JVszJQei9uyJeK_Hk2GmZi7DMZZDVobZIi-2YM3SORo.jpg?auto=webp&s=dc69b844a3d4ba4af9c0b154df4133d1b12a3a64';
+                            const cardTitleOne = document.createElement('h5');
+                            cardTitleOne.classList.add('card-title', 'd-flex', 'justify-content-center');
+                            cardTitleOne.textContent = `Card Title`;
+                            const cardTextOne = document.createElement('h5');
+                            cardTextOne.classList.add('card-text');
+                            cardTextOne.textContent = `This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.`;
+                            // Meny Card Two
+                            const menuCardTwo = document.createElement('div');
+                            menuCardTwo.classList.add('card', 'card-body', 'mb-3', 'col-3');
+                            const imageTwo = document.createElement('img');
+                            imageTwo.src = 'https://external-preview.redd.it/JVszJQei9uyJeK_Hk2GmZi7DMZZDVobZIi-2YM3SORo.jpg?auto=webp&s=dc69b844a3d4ba4af9c0b154df4133d1b12a3a64';
+                            const cardTitleTwo = document.createElement('h5');
+                            cardTitleTwo.classList.add('card-title','d-flex', 'justify-content-center');
+                            cardTitleTwo.textContent = `Card Title`;
+                            const cardTextTwo = document.createElement('h5');
+                            cardTextTwo.classList.add('card-text');
+                            cardTextTwo.textContent = `This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.`;
+                            // Meny Card Three
+                            const menuCardThree = document.createElement('div');
+                            menuCardThree.classList.add('card', 'card-body', 'mb-3', 'col-3');
+                            const imageThree = document.createElement('img');
+                            imageThree.src = 'https://external-preview.redd.it/JVszJQei9uyJeK_Hk2GmZi7DMZZDVobZIi-2YM3SORo.jpg?auto=webp&s=dc69b844a3d4ba4af9c0b154df4133d1b12a3a64';
+                            const cardTitleThree = document.createElement('h5');
+                            cardTitleThree.classList.add('card-title','d-flex', 'justify-content-center');
+                            cardTitleThree.textContent = `Card Title`;
+                            const cardTextThree = document.createElement('h5');
+                            cardTextThree.classList.add('card-text');
+                            cardTextThree.textContent = `This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.`;
 
-                            image.src = 'https://external-preview.redd.it/JVszJQei9uyJeK_Hk2GmZi7DMZZDVobZIi-2YM3SORo.jpg?auto=webp&s=dc69b844a3d4ba4af9c0b154df4133d1b12a3a64';
-                            cardTitle.textContent = `Card Title`;
-                            cardText.textContent = `This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.`;
-                          
-                            menuCard.appendChild(image);
-                            menuCard.appendChild(cardTitle);
-                            menuCard.appendChild(cardText);
-                            mainDiv.appendChild(menuCard);
-                            mainDiv.appendChild(menuCard);
+                            menuCardOne.appendChild(imageOne);
+                            menuCardOne.appendChild(cardTitleOne);
+                            menuCardOne.appendChild(cardTextOne);
+                            main.appendChild(menuCardOne);
 
-                       
+                            menuCardTwo.appendChild(imageTwo);
+                            menuCardTwo.appendChild(cardTitleTwo);
+                            menuCardTwo.appendChild(cardTextTwo);
+                            main.appendChild(menuCardTwo);
+
+                            menuCardThree.appendChild(imageThree);
+                            menuCardThree.appendChild(cardTitleThree);
+                            menuCardThree.appendChild(cardTextThree);
+                            main.appendChild(menuCardThree);
+
 
                 // main.innerHTML = `
                 // <div class="card-group">

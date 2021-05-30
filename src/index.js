@@ -17,28 +17,28 @@
 
 const header = document.createElement('header');
 const contentSelector = document.querySelector('#content');
-header.innerHTML = `
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse justify-content-center">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="home-link">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="menu-link">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="contact-link">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-`;
+header.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+
+  <div class="collapse navbar-collapse justify-content-md-center">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#" id="home-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="menu-link">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="contact-link">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+</nav>`;
 
 contentSelector.append(header);
-
+// Display Home Page  displayHome();
 const main = document.createElement('main');
 contentSelector.append(main);
 
@@ -48,9 +48,14 @@ const contactLink = document.querySelector('#contact-link');
 
 DisplayHome.displayHome()
 
+
+// Display Menu Page  displayMenu();
+// MenuLink.addEventListener("click", DisplayMenu.displayMenu())
 homeLink.addEventListener("click", () => { DisplayHome.displayHome()})
 menuLink.addEventListener("click", () => { DisplayMenu.displayMenu()})
 contactLink.addEventListener("click", () => { DisplayContact.displayContact()})
+
+
 
 const footer = document.createElement('footer');
 
