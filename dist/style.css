@@ -7,7 +7,10 @@ footer {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: url('images/background.png') no-repeat center fixed;     
+    background-size: cover;
 }
-main {
-    margin: auto 0;
+
+.myDiv {
+    background-color: red;
 }
