@@ -24,7 +24,7 @@ export var DisplayContact = (function () {
                         <form action="form.php" class="contact-form" method="post">
                     
                           <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="" autofocus="">
+                            <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="">
                           </div>
                     
                     
