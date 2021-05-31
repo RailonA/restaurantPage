@@ -12,14 +12,16 @@ export var DisplayHome = (function () {
             contactLink.classList.remove('active');
             const logo = document.createElement('img');
             const backgroundDiv = document.createElement('div');
-            backgroundDiv.classList.add('myDiv');
+            const description = document.createElement('h1');
+            backgroundDiv.classList.add('background');
             logo.src='./images/logo.png'
-            logo.classList.add('rounded-circle');
-            main.classList.add('align-self-center', 'mt-5');
-            
+            logo.classList.add('rounded-circle', 'my-2');
+            main.classList.add('my-2','mx-auto');
+            description.textContent= "Welcome";
             main.innerHTML = ``  
-            main.appendChild(logo); 
             main.appendChild(backgroundDiv); 
+            backgroundDiv.appendChild(description); 
+            backgroundDiv.appendChild(logo); 
             
          },
          card: function(picture, title, description) {
