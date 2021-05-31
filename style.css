@@ -11,6 +11,8 @@ footer {
     background-size: cover;
 }
 
-.myDiv {
-    background-color: red;
+.background {
+    padding: 25px 25px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
 }
