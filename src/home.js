@@ -23,27 +23,7 @@ export var DisplayHome = (function () {
             backgroundDiv.appendChild(description); 
             backgroundDiv.appendChild(logo); 
             
-         },
-         card: function(picture, title, description) {
-            const main = document.querySelector('main');
-            const divCard = document.createElement('div');
-            const cardImage = document.createElement('img');
-            const cardTitle = document.createElement('h5');
-            const cardText = document.createElement('h5');
-            divCard.classList.add('card', 'card-body', 'mb-3','rounded-circle');
-            cardImage.src = picture;
-            cardImage.classList.add('rounded-circle')
-            cardTitle.classList.add('card-title', 'd-flex', 'justify-content-center');
-            cardTitle.textContent = title;
-            
-            cardText.classList.add('card-text');
-            cardText.textContent = description;
-            
-            divCard.appendChild(cardImage);
-            divCard.appendChild(cardTitle);
-            divCard.appendChild(cardText);
-            main.appendChild(divCard);
-         }         
+         }        
      };
   })();
   

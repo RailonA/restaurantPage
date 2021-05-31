@@ -15,87 +15,32 @@ export var DisplayMenu = (function () {
                             homeLink.classList.remove('active');
                             menuLink.classList.add('active');
                             contactLink.classList.remove('active');
-            
-                // main.innerHTML = `
-                // <div class="card-group">
-                // <div class="card">
-                //     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                //     <div class="card-body">
-                //     <h5 class="card-title">Card title</h5>
-                //     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                //     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                //     </div>
-                // </div>
-                // <div class="card">
-                //     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                //     <div class="card-body">
-                //     <h5 class="card-title">Card title</h5>
-                //     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                //     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                //     </div>
-                // </div>
-                // <div class="card">
-                //     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                //     <div class="card-body">
-                //     <h5 class="card-title">Card title</h5>
-                //     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                //     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                //     </div>
-                // </div>
-                // </div>
-                // <div class="card-group">
-                // <div class="card">
-                //     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                //     <div class="card-body">
-                //     <h5 class="card-title">Card title</h5>
-                //     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                //     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                //     </div>
-                // </div>
-                // <div class="card">
-                //     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                //     <div class="card-body">
-                //     <h5 class="card-title">Card title</h5>
-                //     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                //     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                //     </div>
-                // </div>
-                // <div class="card">
-                //     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                //     <div class="card-body">
-                //     <h5 class="card-title">Card title</h5>
-                //     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                //     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                //     </div>
-                // </div>
-                // </div>
-                // <div class="card-group">
-                // <div class="card">
-                //     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                //     <div class="card-body">
-                //     <h5 class="card-title">Card title</h5>
-                //     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                //     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                //     </div>
-                // </div>
-                // <div class="card">
-                //     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                //     <div class="card-body">
-                //     <h5 class="card-title">Card title</h5>
-                //     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                //     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                //     </div>
-                // </div>
-                // <div class="card">
-                //     <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                //     <div class="card-body">
-                //     <h5 class="card-title">Card title</h5>
-                //     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                //     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                //     </div>
-                // </div>
-                // </div>`
-                
-                  }       
+                            main.innerHTML=``;
+                            main.classList.add('background');
+                            DisplayMenu.card("./images/logo.png","Beef","this comes from cow","1000");
+                            DisplayMenu.card("./images/logo.png","Beef","this comes from cow","1000");
+                  },
+                  card: function(picture, title, description, price) {
+                     const main = document.querySelector('main');
+                     const divCard = document.createElement('div');
+                     const cardImage = document.createElement('img');
+                     const cardTitle = document.createElement('h4');
+                     const cardText = document.createElement('h5');
+                     const priceTag = document.createElement('h5');
+                     divCard.classList.add('card', 'card-body', 'mb-3');
+                     cardImage.src = picture;
+                     cardImage.classList.add('rounded-circle');
+                     cardTitle.classList.add('card-title', 'd-flex', 'justify-content-center');
+                     cardTitle.textContent = title;
+                     cardText.classList.add('card-text');
+                     cardText.textContent = description;
+                     priceTag.textContent = price+" USD $";
+                     
+                     divCard.appendChild(cardImage);
+                     divCard.appendChild(cardTitle);
+                     divCard.appendChild(cardText);
+                     divCard.appendChild(priceTag);
+                     main.appendChild(divCard);
+                  }        
             };
         })();

@@ -47,6 +47,7 @@ const menuLink = document.querySelector("#menu-link");
 const contactLink = document.querySelector('#contact-link');
 
 
+
 // DisplayHome.card("./images/logo.png","Logo","this is the description")
 // Display Menu Page  displayMenu();
 // MenuLink.addEventListener("click", DisplayMenu.displayMenu())
