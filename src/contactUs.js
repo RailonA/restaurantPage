@@ -11,7 +11,7 @@ export var DisplayContact = (function () {
             contactLink.classList.add('active');
                     main.innerHTML = `<div class="container">
 
-                    <div class="row">
+                    <div class="row background">
                       <h1 class="header-title"> Contact </h1>
                       <hr>
                       <div class="col-sm-6">
@@ -44,8 +44,8 @@ export var DisplayContact = (function () {
                     
                     </div>
                     
-                    <div class="container second-portion">
-                    <div class="row">
+                    <div class="container my-2">
+                    <div class="row background">
                       <div class="col-xs-12 col-sm-6 col-lg-4">
                         <div class="box">
                           <div class="icon">
