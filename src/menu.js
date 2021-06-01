@@ -1,4 +1,4 @@
-export const DisplayMenu = (() => {
+export const DisplayMenu = (function () {
   return {
     displayMenu: function () {
       const main = document.querySelector('main');
@@ -84,6 +84,6 @@ export const DisplayMenu = (() => {
                   </div>
 
                   </div>`;
-    },
+                  }       
   };
 })();
