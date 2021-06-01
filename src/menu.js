@@ -30,7 +30,7 @@ export var DisplayMenu = (function () {
 </div>
 <div class="menu-container col-12 d-flex flex-wrap justify-content-center">
    <div class="menu-item col-3 justify-content-center">
-      <img class="d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
+      <img class="menu-img d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
          <div class="item-content col-6">
             <h4 class='text-center'>Hamburger: <span>$2.49</span></h4>
             <p class='text-center'>
@@ -40,42 +40,42 @@ export var DisplayMenu = (function () {
          </div>
    </div>
    <div class="menu-item col-3 justify-content-center">
-      <img class="d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
+      <img class="menu-img d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
          <div class="item-content col-6">
             <h4 class='text-center'>Cheeseburger: <span>$2.99</span></h4>
             <p class='text-center'>Similar to our hamburger, but with cheese.</p>
          </div>
    </div>
    <div class="menu-item col-3 justify-content-center">
-      <img class="d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
+      <img class="menu-img d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
       <div class="item-content col-6">
          <h4 class='text-center'>Double Cheeseburger: <span>$3.49</span></h4>
          <p class='text-center'>Similar to our cheeseburger, but with an extra patty.</p>
       </div>
    </div>
    <div class="menu-item col-3 justify-content-center">
-      <img class="d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
+      <img class="menu-img d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
       <div class="item-content col-6">
          <h4 class='text-center'>Steak: <span>$11.99</span></h4>
          <p class='text-center'>A juicy steak made just how you like it.</p>
       </div>
    </div>
    <div class="menu-item col-3 justify-content-center">
-      <img class="d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
+      <img class="menu-img d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
       <div class="item-content col-6">
          <h4 class='text-center'>BBQ Ribs: <span>$8.99</span></h4>
          <p class='text-center'>Barbecue ribs with your choice of a add-ons.</p>
       </div>
    </div>
    <div class="menu-item col-3 justify-content-center">
-      <img class="d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
+      <img class="menu-img d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
       <div class="item-content col-6">
          <h4 class='text-center'>BBQ Ribs: <span>$8.99</span></h4>
          <p class='text-center'>Barbecue ribs with your choice of a add-ons.</p>
       </div>
    </div>
    <div class="menu-item col-3 justify-content-center">
-    <img class="d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
+    <img class="menu-img d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
     <div class="item-content col-6">
       <h4 class='text-center'>Caesar Salad: <span>$7.99</span></h4>
       <p class='text-center'>
@@ -85,7 +85,7 @@ export var DisplayMenu = (function () {
     </div>
   </div>
   <div class="menu-item col-3 justify-content-center">
-  <img class="d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
+  <img class="menu-img d-flex justify-content-center" src="https://www.thespruceeats.com/thmb/HEbGAFMq0PxbLMd3_Ooedlv_sCY=/3000x2000/filters:fill(auto,1)/Hamburger-Hot-Dog-58add5f03df78c345bdef6ff.jpg" alt="" />
     <div class="item-content col-6">
       <h4 class='text-center'>French Fries: <span>$1.99</span></h4>
       <p class='text-center'>
