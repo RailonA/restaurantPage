@@ -10,7 +10,6 @@ export const DisplayMenu = (function () {
       contactLink.classList.remove('active');
       main.classList.add('align-self-center', 'mt-5', 'justify-content-center');
 
-
       main.innerHTML = `
                   <div class='container '>
                   <div class='hero'>

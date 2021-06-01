@@ -1,5 +1,5 @@
 /* eslint-disable */ 
-export var DisplayContact = (function () {
+export const DisplayContact = (() => {
   return {
       displayContact: function () {
           const main = document.querySelector('main');

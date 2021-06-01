@@ -34,11 +34,11 @@ DisplayHome.displayHome(
 homeLink.addEventListener('click', () => { DisplayHome.displayHome() }),
 menuLink.addEventListener('click', () => { DisplayMenu.displayMenu() }),
 contactLink.addEventListener('click', () => { DisplayContact.displayContact() }),
-footer.classList.add('py-4', 'bg-dark', 'flex-shrink-0');
+footer.classList.add('py-4', 'bg-dark', 'flex-shrink-0'),
 footer.innerHTML=`
 <div class='container text-center'>
   <a href='https://www.freepik.com/photos/background' class='text-muted'>This is the footer</a>
-</div>`;
+</div>`);
 contentSelector.append(footer);
 
 
