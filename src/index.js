@@ -30,15 +30,15 @@ const menuLink = document.querySelector('#menu-link');
 const contactLink = document.querySelector('#contact-link');
 const footer = document.createElement('footer');
 
-DisplayHome.displayHome(
-homeLink.addEventListener('click', () => { DisplayHome.displayHome() }),
-menuLink.addEventListener('click', () => { DisplayMenu.displayMenu() }),
-contactLink.addEventListener('click', () => { DisplayContact.displayContact() }),
-footer.classList.add('py-4', 'bg-dark', 'flex-shrink-0'),
-footer.innerHTML=`
-<div class='container text-center'>
-  <a href='https://www.freepik.com/photos/background' class='text-muted'>This is the footer</a>
-</div>`);
+  DisplayHome.displayHome(
+  homeLink.addEventListener('click', () => { DisplayHome.displayHome() }),
+  menuLink.addEventListener('click', () => { DisplayMenu.displayMenu() }),
+  contactLink.addEventListener('click', () => { DisplayContact.displayContact() }),
+  footer.classList.add('py-4', 'bg-dark', 'flex-shrink-0'),
+  footer.innerHTML=`
+  <div class='container text-center'>
+    <a href='https://www.freepik.com/photos/background' class='text-muted'>This is the footer</a>
+  </div>`);
 contentSelector.append(footer);
 
 
