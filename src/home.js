@@ -1,5 +1,5 @@
 export const DisplayHome = (() =>  {
-  return {
+ 
     displayHome: function () {
       const main = document.querySelector('main');
       const homeLink = document.querySelector('#home-link');
@@ -31,7 +31,7 @@ export const DisplayHome = (() =>  {
       body.appendChild(backgroundDiv);
       main.appendChild(backgroundDiv);
     
-         }        
+             
      };
   });
   
