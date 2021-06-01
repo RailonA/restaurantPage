@@ -12,5 +12,47 @@ footer {
 }
 
 .myDiv {
-    background-color: red;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+main {
+ padding: 40px;
+}
+
+.container {
+    padding: 0; 
+    margin: 0;
+}
+
+.rowOne {
+    background-color: white;
+    opacity: 0.;
+    padding:80px 80px 60px 80px;
+    margin-top: 80px;
+}
+
+.rowTwo {
+    background-color: white;
+    opacity: 0.;
+    padding:20px 80px 40px 80px;
+    margin-bottom: 80px;
+}
+
+.card-content {
+    margin: 100px;
+    background-color: black;
+    height: 300;
+    font-size: 50px;
+    padding: 40px;
+    color: yellow;
+    opacity: 0.5;
+}
+
+
+img {
+    height: 400px;
+    width: 600px;
+
 }
