@@ -9,7 +9,6 @@
     DisplayContact
    } from './contactUs.js';
  
-
 const header = document.createElement('header');
 const contentSelector = document.querySelector('#content');
 header.innerHTML = `

@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+/* eslint-disable */ 
 
 const path = require('path');
 module.exports = {
