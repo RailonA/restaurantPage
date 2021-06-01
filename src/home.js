@@ -1,4 +1,4 @@
-export const DisplayHome = (() => {
+export const DisplayHome = (() =>  {
   return {
     displayHome: function () {
       const main = document.querySelector('main');
@@ -33,6 +33,6 @@ export const DisplayHome = (() => {
     
          }        
      };
-  })();
+  });
   
 
