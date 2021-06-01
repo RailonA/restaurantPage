@@ -1,9 +1,11 @@
+/* eslint-disable import/prefer-default-export */
+
 export const DisplayHome = (function () {
   return {
     displayHome: function () {
       const main = document.querySelector('main');
-      const homeLink = document.querySelector("#home-link");
-      const menuLink = document.querySelector("#menu-link");
+      const homeLink = document.querySelector('#home-link');
+      const menuLink = document.querySelector('#menu-link');
       const contactLink = document.querySelector('#contact-link');
       homeLink.classList.add('active');
       menuLink.classList.remove('active');
