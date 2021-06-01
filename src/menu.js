@@ -1,4 +1,4 @@
-export var DisplayMenu = (function () {
+export const DisplayMenu = (function () {
   return {
     displayMenu: function () {
       const main = document.querySelector('main');
