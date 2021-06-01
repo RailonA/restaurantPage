@@ -1,5 +1,4 @@
-/* eslint no-tabs: ["error", { allowIndentationTabs: true }] */
-
+/* eslint-disable */ 
  import {
    DisplayHome
   } from './home.js';

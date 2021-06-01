@@ -1,5 +1,4 @@
-/* eslint no-tabs: ["error", { allowIndentationTabs: true }] */
-
+/* eslint-disable */ 
 export var DisplayHome = (function () {
     return {
         displayHome: function () {
