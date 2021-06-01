@@ -1,8 +1,3 @@
-/* eslint-disable no-undef */
-// <body>
-//   <div id="content">
-//   </div>
-// </body>
 
  import {
    DisplayHome
@@ -41,11 +36,11 @@ contentSelector.append(header);
 const main = document.createElement('main');
 contentSelector.append(main);
 
-DisplayHome.displayHome()
 const homeLink = document.querySelector("#home-link");
 const menuLink = document.querySelector("#menu-link");
 const contactLink = document.querySelector('#contact-link');
 
+DisplayHome.displayHome();
 
 // DisplayHome.card("./images/logo.png","Logo","this is the description")
 // Display Menu Page  displayMenu();

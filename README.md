@@ -1,63 +1,61 @@
-# JavaScript_template-
-JavaScript
-If you are not familiar with linters and GitHub Actions, read root level README.
+# Restaurant Page
 
-Set-up GitHub Actions
-This GitHub Action is going to run ESLint and Stylelint to help you find style issues.
+> This project is part of Javascript Module with the aim of building a simple Restaurant page using main features of ES6 and Webpack 
 
-Stylelint is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+## Watch the Live Version
 
-ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+[Live Demo] https://railona.github.io/restaurentPage/)
+![screenshot](./dist/images/Screenshot.png)
 
-Please do the following steps in this order:
+### Prerequisites
 
-In the first commit of your feature branch create a .github/workflows folder and add a copy of .github/workflows/linters.yml to that folder.
-Remember to use the file linked above
-Remember that .github folder starts with a dot.
-Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.
-If you think that change is necessary - open a Pull Request in this repository and let your code reviewer know about it.
-When you open your first pull request you should see the result of the GitHub Actions:
-gh actions checks
+- JavaScript ES6
+- Text Editor
+- Git
+- NodeJS
+- Webpack
 
-Click on the Details link to see the full output and the errors that need to be fixed:
+## Getting Started
 
-gh actions failing checks
+1. Open Terminal.
+2. Navigate to your desired location to download the contents of this repository.
+3. Copy and paste the following code into the Terminal :
+   ```bash
+   $ git clone git@github.com:RailonA/restaurentPage.git
+   ```
+4. Run `cd restaurant-app`
+5. Install the needed dependencies 
+    ```bash
+    $ npm install
+    ```
+6. run
+    ```bash
+    npm run build
+    ``` 
+    to bundle scripts with **_webpack_** a static module bundler for modern JavaScript applications
 
-Set-up linters in your local env
-Note: The npm package manager is going to create a node_modules directory to install all of your dependencies. You shouldn't commit that directory. To avoid that, you can create a .gitignore file and add node_modules to it:
+### Usage
+Lauch the local version of this project opening the `dist/index.html` file in the browser
 
-# .gitignore
-node_modules/
-ESLint
-Run npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x (not sure how to use npm? Read this).
-Copy .eslintrc.json to the root directory of your project.
-Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.
-If you think that change is necessary - open a Pull Request in this repository and let your code reviewer know about it.
-Run npx eslint . on the root of your directory of your project.
-Fix linter errors.
-IMPORTANT NOTE: feel free to research auto-correct options for Stylelint if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
-Stylelint
-Run
+## Contributing
 
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-(not sure how to use npm? Read this).
+This project was created for educational purposes as part of the Microverse web development curriculum; contributing is not accepted.
 
-Copy .stylelintrc.json to the root directory of your project.
+Feel free to check the [issues page](https://github.com/RailonA/restaurentPage/issues).
 
-Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.
+## Author
 
-If you think that change is necessary - open a Pull Request in this repository and let your code reviewer know about it.
-Run
 
-npx stylelint "**/*.{css,scss}"
-on the root of your directory of your project.
+👤 **Railon Acosta**
+- GitHub: [@railonA](https://github.com/RailonA)
+- Linkedin: [@railonAcosta](https://www.linkedin.com/in/railon-acosta-81265180/)
+- Twitter: [@railonAcosta](https://twitter.com/RailonAcosta)
 
-Fix linter errors.
 
-IMPORTANT NOTE: feel free to research auto-correct options for Stylelint if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+### Show your support
 
-Test/Deployment Actions
-Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+Give a ⭐️ if you like this project!
 
-Make sure that you do not modify the .github/workflows/linters.yml but that you create a separe GitHub Action workflow file for that.
-Make sure that you do not modify the .github/workflows/linters.yml but that you create a separe GitHub Action workflow file for that.
+## License
+
+This project is licensed under the MIT License
