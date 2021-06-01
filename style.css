@@ -18,7 +18,8 @@ align-items: center;
 }
 
 main {
- padding: 40px;
+padding: 40px;
+
 }
 
 .container {
@@ -50,9 +51,8 @@ main {
     opacity: 0.5;
 }
 
-
-img {
-    height: 400px;
-    width: 600px;
+.menu-img {
+    height: 200px;
+    width: 300px;
 
 }
