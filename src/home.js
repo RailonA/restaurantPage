@@ -1,4 +1,4 @@
-export const DisplayHome = (function () {
+export const DisplayHome = (() => {
   return {
     displayHome: function () {
       const main = document.querySelector('main');

@@ -1,6 +1,6 @@
-import { DisplayHome } from './home.js'
-import { DisplayMenu } from './menu.js'
-import { DisplayContact } from './contactUs.js'
+import { DisplayHome } from './home.js';
+import { DisplayMenu } from './menu.js';
+import { DisplayContact } from './contactUs.js';
 const header = document.createElement('header');
 const contentSelector = document.querySelector('#content');
 header.innerHTML = `
@@ -28,7 +28,7 @@ contentSelector.append(main);
 const homeLink = document.querySelector('#home-link');
 const menuLink = document.querySelector('#menu-link');
 const contactLink = document.querySelector('#contact-link');
-const footer = document.createElement('footer')
+const footer = document.createElement('footer');
 
 DisplayHome.displayHome(
 homeLink.addEventListener('click', () => { DisplayHome.displayHome() }),
