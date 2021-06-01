@@ -1,4 +1,4 @@
-/*eslint-disable no-mixed-spaces-and-tabs*/
+/* eslint no-tabs: ["error", { allowIndentationTabs: true }] */
 
 export var DisplayMenu = (function () {
 
