@@ -1,4 +1,4 @@
-// define module
+/*eslint-disable no-mixed-spaces-and-tabs*/
 
 export var DisplayHome = (function () {
     return {

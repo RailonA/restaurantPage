@@ -1,4 +1,4 @@
-
+/*eslint-disable no-mixed-spaces-and-tabs*/
 
 export var DisplayMenu = (function () {
 
