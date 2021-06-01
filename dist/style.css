@@ -55,4 +55,9 @@ padding: 40px;
     height: 200px;
     width: 300px;
 
+
+.background {
+    padding: 25px 25px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
 }

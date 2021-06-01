@@ -12,11 +12,11 @@
 
 const header = document.createElement('header');
 const contentSelector = document.querySelector('#content');
-header.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+header.innerHTML = `
+<nav class="navbar navbar-expand navbar-dark bg-dark">
 <div class="container-fluid">
-
-  <div class="collapse navbar-collapse justify-content-md-center">
-    <ul class="navbar-nav">
+  <div class="collapse navbar-collapse" id="navbarsExample02">
+    <ul class="navbar-nav mx-auto">
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#" id="home-link">Home</a>
       </li>
@@ -27,10 +27,10 @@ header.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="nav-link" href="#" id="contact-link">Contact Us</a>
       </li>
     </ul>
-  </div>
-
+    </div>
 </div>
-</nav>`;
+</nav>
+`;
 
 contentSelector.append(header);
 const main = document.createElement('main');
@@ -41,6 +41,7 @@ const menuLink = document.querySelector("#menu-link");
 const contactLink = document.querySelector('#contact-link');
 
 DisplayHome.displayHome();
+
 
 // DisplayHome.card("./images/logo.png","Logo","this is the description")
 // Display Menu Page  displayMenu();

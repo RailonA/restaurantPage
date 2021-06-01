@@ -32,11 +32,21 @@ export var DisplayHome = (function () {
             contentText.classList.add('card-content', 'd-flex', 'justify-content-center');
             contentText.textContent = 'Welcome to the best Restaurent in town';
             
-            main.appendChild(backgroundDiv); 
+
+            backgroundDiv.classList.add('background');
+            logo.src='./images/logo.png'
+            logo.classList.add('rounded-circle', 'my-2');
+            main.classList.add('my-2','mx-auto');
+            main.innerHTML = `` 
+            
+
             backgroundDiv.appendChild(logo); 
             backgroundDiv.appendChild(contentText);
             body.appendChild(backgroundDiv);
-         }         
+            
+            main.appendChild(backgroundDiv); 
+            
+         }        
      };
   })();
   
