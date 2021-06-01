@@ -84,6 +84,6 @@ export const DisplayMenu = (() => {
                   </div>
 
                   </div>`;
-                  }       
+    },       
   };
 })();
