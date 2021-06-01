@@ -15,23 +15,23 @@ export const DisplayHome = (function () {
       const contentText = document.createElement('h5');
     
       backgroundDiv.classList.add('myDiv');
-      logo.src='./images/logo.png'
+      logo.src = './images/logo.png';
       
       logo.classList.add('rounded-circle', 'd-flex');
       backgroundDiv.classList.add('justify-content-center');
   
       main.classList.add( 'mt-5');
-      main.innerHTML = ``  
+      main.innerHTML = ``;
       
       backgroundDiv.classList.add('justify-content-center');
       contentText.classList.add('card-content', 'd-flex', 'justify-content-center');
       contentText.textContent = 'Welcome to the best Restaurent in town';
       
       backgroundDiv.classList.add('background');
-      logo.src='./images/logo.png'
+      logo.src = './images/logo.png';
       logo.classList.add('rounded-circle', 'my-2');
       main.classList.add('my-2','mx-auto');
-      main.innerHTML = ``
+      main.innerHTML = ``;
       
       backgroundDiv.appendChild(logo);
       backgroundDiv.appendChild(contentText);
