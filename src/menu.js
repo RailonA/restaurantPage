@@ -1,15 +1,15 @@
 export var DisplayMenu = (function () {
-                return {
-                    displayMenu: function () {
-                            const main = document.querySelector('main');
-
-                            const homeLink = document.querySelector("#home-link");
-                            const menuLink = document.querySelector("#menu-link");
-                            const contactLink = document.querySelector('#contact-link');
-                            homeLink.classList.remove('active');
-                            menuLink.classList.add('active');
-                            contactLink.classList.remove('active');
-                            main.classList.add('align-self-center', 'mt-5', 'justify-content-center');
+  return {
+    displayMenu: function () {
+      const main = document.querySelector('main');
+      
+      const homeLink = document.querySelector("#home-link");
+      const menuLink = document.querySelector("#menu-link");
+      const contactLink = document.querySelector('#contact-link');
+      homeLink.classList.remove('active');
+      menuLink.classList.add('active');
+      contactLink.classList.remove('active');
+      main.classList.add('align-self-center', 'mt-5', 'justify-content-center');
 
 
                   main.innerHTML = `
@@ -87,5 +87,5 @@ export var DisplayMenu = (function () {
 
                   </div>`;
                   }       
-            };
-        })();
+  };
+})();

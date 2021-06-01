@@ -1,12 +1,6 @@
- import {
-   DisplayHome
-  } from './home.js';
-  import {
-    DisplayMenu
-   } from './menu.js';
-   import {
-    DisplayContact
-   } from './contactUs.js';
+import { DisplayHome } from './home.js';
+  import { DisplayMenu } from './menu.js';
+   import { DisplayContact } from './contactUs.js';
  
     const header = document.createElement('header');
     const contentSelector = document.querySelector('#content');
