@@ -29,15 +29,8 @@ padding: 40px;
 .rowOne {
     background-color: white;
     opacity: 0.;
-    padding:80px 80px 60px 80px;
+    padding:20px 80px 60px 80px;
     margin-top: 80px;
-}
-
-.rowTwo {
-    background-color: white;
-    opacity: 0.;
-    padding:20px 80px 40px 80px;
-    margin-bottom: 80px;
 }
 
 .card-content {
@@ -51,6 +44,6 @@ padding: 40px;
 }
 
 .menu-img {
-    height: 200px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
 }

@@ -1,4 +1,3 @@
-/* eslint-disable */ 
 export var DisplayHome = (function () {
     return {
         displayHome: function () {
