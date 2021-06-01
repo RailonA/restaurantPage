@@ -22,32 +22,23 @@ header.innerHTML = `
     </div>
     </nav>
     `;
-
 contentSelector.append(header);
 const main = document.createElement('main');
 contentSelector.append(main);
-
 const homeLink = document.querySelector('#home-link');
 const menuLink = document.querySelector('#menu-link');
 const contactLink = document.querySelector('#contact-link');
+const footer = document.createElement('footer')
 
-DisplayHome.displayHome();
-
-// DisplayHome.card('./images/logo.png','Logo','this is the description')
-// Display Menu Page  displayMenu();
-// MenuLink.addEventListener('click', DisplayMenu.displayMenu())
-homeLink.addEventListener('click', () => { DisplayHome.displayHome() });
-menuLink.addEventListener('click', () => { DisplayMenu.displayMenu() });
-contactLink.addEventListener('click', () => { DisplayContact.displayContact() });
-
-const footer = document.createElement('footer');
-
-footer.classList.add('py-4','bg-dark','flex-shrink-0');
+DisplayHome.displayHome(
+homeLink.addEventListener('click', () => { DisplayHome.displayHome() }),
+menuLink.addEventListener('click', () => { DisplayMenu.displayMenu() }),
+contactLink.addEventListener('click', () => { DisplayContact.displayContact() }),
+footer.classList.add('py-4', 'bg-dark', 'flex-shrink-0');
 footer.innerHTML=`
 <div class='container text-center'>
   <a href='https://www.freepik.com/photos/background' class='text-muted'>This is the footer</a>
 </div>`;
-
 contentSelector.append(footer);
 
 
