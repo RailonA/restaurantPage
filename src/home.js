@@ -1,38 +1,34 @@
-export const DisplayHome = (function () {
-  return {
-    displayHome: function () {
-      const main = document.querySelector('main');
-      const homeLink = document.querySelector('#home-link');
-      const menuLink = document.querySelector('#menu-link');
-      const contactLink = document.querySelector('#contact-link');
-      homeLink.classList.add('active');
-      menuLink.classList.remove('active');
-      contactLink.classList.remove('active');
-      const body = document.querySelector('main');
-      const logo = document.createElement('img');
-      const backgroundDiv = document.createElement('div');
-      const contentText = document.createElement('h5');
-      backgroundDiv.classList.add('myDiv');
-      logo.src = './images/logo.png';
-      logo.classList.add('rounded-circle', 'd-flex');
-      backgroundDiv.classList.add('justify-content-center');
-      main.classList.add( 'mt-5');
-      main.innerHTML = '';
-      backgroundDiv.classList.add('justify-content-center');
-      contentText.classList.add('card-content', 'd-flex', 'justify-content-center');
-      contentText.textContent = 'Welcome to the best Restaurent in town';
-      backgroundDiv.classList.add('background');
-      logo.src = './images/logo.png';
-      logo.classList.add('rounded-circle', 'my-2');
-      main.classList.add('my-2', 'mx-auto');
-      main.innerHTML = '';
-      backgroundDiv.appendChild(logo);
-      backgroundDiv.appendChild(contentText);
-      body.appendChild(backgroundDiv);
-      main.appendChild(backgroundDiv);
+const renderHomePage = (() => ({
+  displayHome() {
+    const main = document.querySelector('#content');
+    const homeLink = document.querySelector('#home-link');
+    const menuLink = document.querySelector('#menu-link');
+    const contactLink = document.querySelector('#contact-link');
+    const bodySel = document.querySelector('body');
+    bodySel.classList.remove('bodyBackground2');
+    homeLink.classList.add('active');
+    menuLink.classList.remove('active');
+    contactLink.classList.remove('active');
+    const logo = document.createElement('img');
+    const backgroundDiv = document.createElement('div');
+    const title = document.createElement('h1');
+    const description = document.createElement('h4');
+    const divDescription = document.createElement('div');
+    divDescription.classList.add('description-mw');
+    description.textContent = "We make eating good in the woods feel safe";
+    backgroundDiv.classList.add('background', 'my-2', 'text-center');
+    logo.src = './images/logo.png';
     
-         }        
-     };
-  })();
-  
+    logo.classList.add('rounded-circle', 'my-1', 'col-3', 'logo');
+    title.textContent = 'Welcome to';
+    main.innerHTML = '';
+    main.classList.add('mx-auto');
+    main.append(backgroundDiv);
+    backgroundDiv.appendChild(title);
+    backgroundDiv.appendChild(logo);
+    backgroundDiv.appendChild(divDescription);
+    divDescription.appendChild(description);
+  },
+}))();
 
+export default renderHomePage;
