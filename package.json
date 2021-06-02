@@ -1,0 +1,32 @@
+{
+  "name": "restaurentpage",
+  "version": "1.0.0",
+  "description": "JavaScript If you are not familiar with linters and GitHub Actions, read root level README.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development --watch"
+  },
+  "script": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "webDependencies": {
+    "webpack": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "eslint": "^7.27.0",
+    "lodash": "^4.17.21"
+  }
+}
