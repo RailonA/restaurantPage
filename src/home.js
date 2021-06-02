@@ -17,13 +17,11 @@ const renderHomePage = (() => ({
     backgroundDiv.classList.add('description-mw', 'background');
 
     divDescription.classList.add('d-flex', 'justify-content-center');
-    description.classList.add('d-flex','justify-content-center');
-    title.classList.add('d-flex','justify-content-center');
-    description.textContent = "We make eating good in the woods feel safe";
+    description.classList.add('d-flex', 'justify-content-center');
+    title.classList.add('d-flex', 'justify-content-center');
+    description.textContent = 'We make eating good in the woods feel safe';
     logo.src = './images/logo.png';
-    
     logo.classList.add('logo');
-    
     description
     title.textContent = 'Welcome to';
     main.innerHTML = '';
