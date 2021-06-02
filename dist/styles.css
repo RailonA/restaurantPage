@@ -11,18 +11,35 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url('images/background.png') no-repeat center fixed;
+    background: url('images/background.jpeg') no-repeat center fixed;
     background-size: cover;
+    justify-self: center;
+    align-self: center;
 }
+
 
 .background {
+    padding: 25px 25px;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
+    width: 100%;
 }
 
+
 .description-mw {
-    max-width: 500px;
+    max-width: 600px;
     overflow-wrap: break-word;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+}
+
+.cardBackground {
+    overflow-wrap: break-word;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .max-width-pic {
@@ -32,8 +49,12 @@ body {
 }
 
 .bodyBackground2 {
-    background: url('images/background2.jpg') no-repeat center fixed;
+    background: url('images/background2.jpeg') no-repeat center fixed;
     background-size: cover;
+}
+
+.row {
+    padding: 20px;
 }
 
 footer {
@@ -41,14 +62,16 @@ footer {
 }
 
 .logo {
-   height: 20px;
+   width: 90%;
+   margin: 20px;
 }
 
 
+/* 
 @media (min-width: 1200px) {}
 
 @media (min-width: 768px) and (max-width: 979px) {}
 
 @media (max-width: 767px) {}
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {} */

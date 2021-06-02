@@ -11,8 +11,10 @@ const renderMenuPage = (() => ({
     menuLink.classList.add('active');
     contactLink.classList.remove('active');
     main.innerHTML = '';
-    renderMenuPage.card('./images/picanha.jpeg', 'Pincanha Wagyu', 'Top sirloin cap, also known as Brazilian picanha, is an inexpensive and flavorful steak that can be roasted or grilled.', '1000');
-    renderMenuPage.card('./images/ribeye.jpeg', 'Rib Eye', 'The rib eye or ribeye (also known as Scotch fillet in Australia and New Zealand), is a beef steak from the rib section. The rib section of beef spans from ribs six through twelve. Ribeye steaks are mostly composed of the Longissimus dorsi muscle but also contain the Complexus and Spinalis muscles.', '1000');
+    renderMenuPage.card('./images/burger.jpg', 'Burger', 'Food Discription', '20.00');
+    renderMenuPage.card('./images/burger.jpg', 'Burger', 'Food Discription', '20.00');
+    renderMenuPage.card('./images/burger.jpg', 'Burger', 'Food Discription', '20.00');
+    renderMenuPage.card('./images/burger.jpg', 'Burger', 'Food Discription', '20.00');
   },
   card(picture, title, description, price) {
     const main = document.querySelector('#content');
@@ -21,14 +23,17 @@ const renderMenuPage = (() => ({
     const cardTitle = document.createElement('h4');
     const cardText = document.createElement('h5');
     const priceTag = document.createElement('h5');
-    divCard.classList.add('background', 'my-2');
+    
+    main.classList.add( 'my-2', 'col-12', 'd-flex', 'flex-wrap', 'justify-content-center');
+
+    divCard.classList.add('col-4', 'background', 'contactContainer', 'm-4');
     cardImage.src = picture;
-    cardImage.classList.add('rounded-circle', 'max-width-pic');
+    cardImage.classList.add('rounded-circle', 'd-flex', 'justify-content-center', 'col-6', 'ml-50');
     cardTitle.classList.add('card-title', 'd-flex', 'justify-content-center');
     cardTitle.textContent = title;
-    cardText.classList.add('card-text', 'description-mw');
+    cardText.classList.add('card-text',  'd-flex', 'justify-content-center');
     cardText.textContent = description;
-    priceTag.textContent = `Price: ${price} USD $`;
+    priceTag.textContent = `Price  USD  $: ${price}`;
     divCard.append(cardImage);
     divCard.append(cardTitle);
     divCard.append(cardText);

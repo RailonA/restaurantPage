@@ -14,12 +14,17 @@ const renderHomePage = (() => ({
     const title = document.createElement('h1');
     const description = document.createElement('h4');
     const divDescription = document.createElement('div');
-    divDescription.classList.add('description-mw');
+    backgroundDiv.classList.add('description-mw', 'background');
+
+    divDescription.classList.add('d-flex', 'justify-content-center');
+    description.classList.add('d-flex','justify-content-center');
+    title.classList.add('d-flex','justify-content-center');
     description.textContent = "We make eating good in the woods feel safe";
-    backgroundDiv.classList.add('background', 'my-2', 'text-center');
     logo.src = './images/logo.png';
     
-    logo.classList.add('rounded-circle', 'my-1', 'col-3', 'logo');
+    logo.classList.add('logo');
+    
+    description
     title.textContent = 'Welcome to';
     main.innerHTML = '';
     main.classList.add('mx-auto');

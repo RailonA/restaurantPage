@@ -9,10 +9,10 @@ const renderContactPage = (() => ({
     homeLink.classList.remove('active');
     menuLink.classList.remove('active');
     contactLink.classList.add('active');
-    main.innerHTML = `<div class="container my-2">
+    main.innerHTML = `<div class="background my-2 ">
 
-                  <div class="row background ">
-                    <h1 class="header-title"> Contact </h1>
+                  <div class="row ">
+                    <h1 class="header-title d-flex justify-content-center"> Contact </h1>
                     <hr>
                     <div class="col-sm-6">
                       <iframe width="100%" height="320px;" frameborder="0" style="border:0"
@@ -20,7 +20,7 @@ const renderContactPage = (() => ({
                         allowfullscreen></iframe>
                     </div>
                   
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 background">
                       <form action="form.php" class="contact-form" method="post">
                   
                         <div class="form-group">
@@ -34,25 +34,25 @@ const renderContactPage = (() => ({
                   
                         <div class="form-group">
                           <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB"
-                            placeholder="Type Your Message/Feedback here..." required=""></textarea>
+                            placeholder="Tips in finding you will be helpful" required=""></textarea>
                           <br>
                           <button class="btn btn-dark"> <i class="fas fa-paper-plane"></i> Send </button>
                         </div>
                       </form>
                     </div>
+
                   </div>
                   
-                  </div>
                   
                   <div class="container my-2">
-                  <div class="row background">
+                  <div class="row background ">
                     <div class="col-xs-12 col-sm-6 col-lg-4">
                       <div class="box">
                         <div class="icon">
                           <div class="info">
                             <h3 class="title">MAIL</h3>
                             <p>
-                              <i class="fa fa-envelope" aria-hidden="true"></i> elgordo@eltexano1931.com
+                              <i class="fa fa-envelope" aria-hidden="true"></i> railonacosta@gmail.com
                             </p>
                           </div>
                         </div>
@@ -66,7 +66,7 @@ const renderContactPage = (() => ({
                           <div class="info">
                             <h3 class="title">CONTACT</h3>
                             <p>
-                              <i class="fab fa-whatsapp-square"></i> (+57)-3126128566
+                              <i class="fab fa-whatsapp-square"></i> 123-456-7890
                             </p>
                           </div>
                         </div>
@@ -80,12 +80,13 @@ const renderContactPage = (() => ({
                           <div class="info">
                             <h3 class="title">ADDRESS</h3>
                             <p>
-                              <i class="fa fa-map-marker" aria-hidden="true"></i> Street 93 # 51B # 425
+                              <i class="fa fa-map-marker" aria-hidden="true"></i> ABC Street 123 
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
+                  </div>
                   </div>
                   </div>`;
   },
