@@ -2,6 +2,22 @@
 
 > This project is part of Javascript Module with the aim of building a simple Restaurant page using main features of ES6 and Webpack 
 
+<p align="center">
+    <a href="https://img.shields.io/badge/Microverse-blueviolet" alt="Contributors">
+        <img src="https://img.shields.io/badge/Microverse-blueviolet" /></a>
+    <a href="https://www.javascript.com/" alt="JS">
+        <img src="https://img.shields.io/badge/javaScript-ES6-yellow" /></a>
+    <a href="https://webpack.js.org//" alt="Webpack">
+        <img src="https://img.shields.io/badge/Webpack.js-5.21.2-blue" /></a>
+    <a href="https://eslint.org/" alt="Eslint">
+        <img src="https://img.shields.io/badge/eslint-6.8.0-red" /></a>
+    <a href="https://stylelint.io/" alt="Stylelint">
+        <img src="https://img.shields.io/badge/Stylelint-13.3.x-green" /></a>
+</p>
+
+
+<b>Restaurant </b> The main goal of this project is to understand the benefits of modularized code as well as the ability to set up a javascript application made of different modules using webpack.
+
 ## Watch the Live Version
 
 [Live Demo] https://railona.github.io/restaurentPage/)
