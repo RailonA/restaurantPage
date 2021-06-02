@@ -15,9 +15,9 @@ const renderContactPage = (() => ({
                     <h1 class="header-title d-flex justify-content-center"> Contact </h1>
                     <hr>
                     <div class="col-sm-6">
-                      <iframe width="100%" height="320px;" frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5538.622139199621!2d-74.82882132173242!3d11.008790582397756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3c84c74a8641276e!2sTEXANO%201931%20COMIDAS%20RAPIDAS%20Y%20ASADOS!5e0!3m2!1ses!2sco!4v1622259091106!5m2!1ses!2sco"
-                        allowfullscreen></iframe>
+                        <iframe width="100%" height="320px;" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22794.904172424587!2d-110.60580651265356!3d44.42571515608779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5351e55555555555%3A0xaca8f930348fe1bb!2sYellowstone%20National%20Park!5e0!3m2!1sen!2sus!4v1622643262533!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
                     </div>
                   
                     <div class="col-sm-6 background">
