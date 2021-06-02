@@ -23,15 +23,13 @@ const renderMenuPage = (() => ({
     const cardTitle = document.createElement('h4');
     const cardText = document.createElement('h5');
     const priceTag = document.createElement('h5');
-    
-    main.classList.add( 'my-2', 'col-12', 'd-flex', 'flex-wrap', 'justify-content-center');
-
-    divCard.classList.add('col-4', 'background', 'contactContainer', 'm-4');
+    main.classList.add( 'my-2', 'col-8', 'd-flex', 'flex-wrap', 'justify-content-center');
+    divCard.classList.add('col-4', 'background', 'm-4');
     cardImage.src = picture;
     cardImage.classList.add('rounded-circle', 'd-flex', 'justify-content-center', 'col-6', 'ml-50');
     cardTitle.classList.add('card-title', 'd-flex', 'justify-content-center');
     cardTitle.textContent = title;
-    cardText.classList.add('card-text',  'd-flex', 'justify-content-center');
+    cardText.classList.add('card-text', 'd-flex', 'justify-content-center');
     cardText.textContent = description;
     priceTag.textContent = `Price  USD  $: ${price}`;
     divCard.append(cardImage);

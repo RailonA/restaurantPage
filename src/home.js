@@ -22,7 +22,6 @@ const renderHomePage = (() => ({
     description.textContent = 'We make eating good in the woods feel safe';
     logo.src = './images/logo.png';
     logo.classList.add('logo');
-    description
     title.textContent = 'Welcome to';
     main.innerHTML = '';
     main.classList.add('mx-auto');
