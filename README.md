@@ -20,7 +20,7 @@
 
 ## Watch the Live Version
 
-[Live Demo] https://railona.github.io/restaurentPage/)
+[Live Demo] https://railona.github.io/restaurantPage/)
 ![screenshot](./dist/images/Screenshot.png)
 
 ### Prerequisites
@@ -57,7 +57,7 @@ Lauch the local version of this project opening the `dist/index.html` file in th
 
 This project was created for educational purposes as part of the Microverse web development curriculum; contributing is not accepted.
 
-Feel free to check the [issues page](https://github.com/RailonA/restaurentPage/issues).
+Feel free to check the [issues page](https://github.com/RailonA/restaurantPage/issues).
 
 ## Author
 
